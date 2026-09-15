@@ -1,0 +1,202 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Section Padding */
+section {
+  padding: 60px 0;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  background: linear-gradient(135deg, #017b5f, #014421);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ===== BUTTONS ===== */
+.btn-outline-success {
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #198754;
+  background-color: white;
+  color: #198754;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-outline-success:hover {
+  background-color: #198754;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(25, 135, 84, 0.3);
+}
+
+/* ===== CARDS ===== */
+.card,
+.scholarship-card,
+.news-card,
+.how-step {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover,
+.scholarship-card:hover,
+.news-card:hover,
+.how-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== IMAGES ===== */
+.inspiration-img,
+.about-img,
+.news-card img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.inspiration-img:hover,
+.about-img:hover,
+.news-card img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== QUOTE & VISION ===== */
+.quote-box,
+.vision-quote {
+  background-color: #017b5f;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ===== CONTACT CARD ===== */
+.contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h5 {
+  font-weight: 600;
+  color: #014421;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icons a {
+  font-size: 1.4rem;
+  margin-right: 15px;
+  color: #198754;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0b5e34;
+}
+
+/* ===== APPLY NOW SECTION ===== */
+.apply-now {
+  background-color: #025e46;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.apply-now a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: white;
+  color: #025e46;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.apply-now a:hover {
+  background-color: #f0fdf4;
+  color: #017b5f;
+  transform: scale(1.05);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll Animations via AOS */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .inspiration-img {
+    height: auto;
+  }
+}
